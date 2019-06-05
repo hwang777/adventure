@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
                  withMaven(
-                     sh 'mvn install'
+                     maven: 'M3',
+                     sh "mvn install"
                  )
             }
         }
