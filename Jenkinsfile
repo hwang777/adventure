@@ -6,7 +6,7 @@ pipeline {
                  withMaven(
                      maven: 'M3'
                  ){
-                     bat "dir"
+                     bat "mvn clean install"
                  }
             }
         }
