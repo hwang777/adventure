@@ -6,7 +6,7 @@ pipeline {
                  withMaven(
                      maven: 'M3'
                  ){
-                     sh "mvn install"
+                     bat "mvn install"
                  }
             }
         }
